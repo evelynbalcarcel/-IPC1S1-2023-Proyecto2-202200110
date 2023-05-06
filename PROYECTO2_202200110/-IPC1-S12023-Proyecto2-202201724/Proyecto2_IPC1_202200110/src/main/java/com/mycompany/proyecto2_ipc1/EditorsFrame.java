@@ -47,13 +47,18 @@ public class EditorsFrame extends javax.swing.JFrame {
         bnRaddioButton = new javax.swing.JRadioButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         RutaImagenLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        viceversaRadioButton.setBackground(new java.awt.Color(255, 255, 255));
+        viceversaRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        viceversaRadioButton.setForeground(new java.awt.Color(0, 0, 0));
         viceversaRadioButton.setText("JPEG a BMP o viceversa");
 
+        jButton1.setBackground(new java.awt.Color(204, 204, 255));
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Ejecutar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,14 +66,29 @@ public class EditorsFrame extends javax.swing.JFrame {
             }
         });
 
+        copiaRadioButton.setBackground(new java.awt.Color(255, 255, 255));
+        copiaRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        copiaRadioButton.setForeground(new java.awt.Color(0, 0, 0));
         copiaRadioButton.setText("copiaJPEG");
 
+        coloresRadioButton.setBackground(new java.awt.Color(255, 255, 255));
+        coloresRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        coloresRadioButton.setForeground(new java.awt.Color(0, 0, 0));
         coloresRadioButton.setText("Rojo Verde Azul Sepia");
 
+        modificarRadioButton.setBackground(new java.awt.Color(255, 255, 255));
+        modificarRadioButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        modificarRadioButton.setForeground(new java.awt.Color(0, 0, 0));
         modificarRadioButton.setText("Modificar la imagen");
 
+        bnRaddioButton.setBackground(new java.awt.Color(255, 255, 255));
+        bnRaddioButton.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        bnRaddioButton.setForeground(new java.awt.Color(0, 0, 0));
         bnRaddioButton.setText("Blanco y negro");
 
+        jButton2.setBackground(new java.awt.Color(204, 204, 255));
+        jButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setText("Subir Imagen");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,6 +96,9 @@ public class EditorsFrame extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setBackground(new java.awt.Color(255, 255, 204));
+        jButton3.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(0, 0, 0));
         jButton3.setText("Salir");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,43 +106,37 @@ public class EditorsFrame extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
-        jLabel1.setText("EDITAR");
+        RutaImagenLabel.setBackground(new java.awt.Color(255, 255, 255));
+        RutaImagenLabel.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        RutaImagenLabel.setForeground(new java.awt.Color(0, 0, 0));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(43, 43, 43)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(RutaImagenLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(RutaImagenLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(viceversaRadioButton)
-                                    .addComponent(bnRaddioButton, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(copiaRadioButton, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(coloresRadioButton, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(modificarRadioButton, javax.swing.GroupLayout.Alignment.LEADING))
-                                .addGap(96, 96, 96)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton3)
-                                    .addComponent(jButton1)
-                                    .addComponent(jButton2)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(174, 174, 174)
-                        .addComponent(jLabel1)))
-                .addContainerGap(57, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(viceversaRadioButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(copiaRadioButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(coloresRadioButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(modificarRadioButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(bnRaddioButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(96, 96, 96)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(15, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
-                .addComponent(RutaImagenLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(RutaImagenLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -138,7 +155,7 @@ public class EditorsFrame extends javax.swing.JFrame {
                         .addComponent(jButton1)
                         .addGap(83, 83, 83)
                         .addComponent(jButton3)))
-                .addGap(58, 58, 58))
+                .addGap(39, 39, 39))
         );
 
         pack();
@@ -277,7 +294,6 @@ public class EditorsFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JRadioButton modificarRadioButton;
     private javax.swing.JRadioButton viceversaRadioButton;
     // End of variables declaration//GEN-END:variables
